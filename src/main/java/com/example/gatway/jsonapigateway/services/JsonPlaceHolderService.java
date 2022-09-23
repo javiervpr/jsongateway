@@ -20,12 +20,12 @@ public class JsonPlaceHolderService {
     }
 
     public Post[] getPosts() {
-        String url = baseUrl + "/posts";
+        String url = baseUrl + "/api/jsonplaceholder/posts";
         return this.restTemplate.getForObject(url, Post[].class);
     }
 
     public User[] getUsers() {
-        String url = baseUrl + "/users";
+        String url = baseUrl + "/api/jsonplaceholder/users";
         return this.restTemplate.getForObject(url, User[].class);
     }
 
