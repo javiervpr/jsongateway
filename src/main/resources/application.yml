@@ -1,6 +1,9 @@
 server:
   port: ${PORT:8080}
 
+base:
+  url: https://jsonplaceholder-gateway.herokuapp.com
+
 spring:
   cloud:
     gateway:
